@@ -2,8 +2,7 @@
 
 #TODO: still issues accessing dashboard
 #use .dockerignore
-#(some have requirements themselves)
-#options to active only certain services
+#options to activate only certain services
 #path to config.js, path to sqlite file
 
 # node.js base image
