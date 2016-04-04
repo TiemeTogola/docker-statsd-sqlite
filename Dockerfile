@@ -1,6 +1,6 @@
 #see dockerfile best practices
 
-#TODO: still issues accessing dashboard
+#TODO:
 #apt-get sqlite3
 #use .dockerignore
 #options to activate only certain services
