@@ -1,6 +1,7 @@
 #see dockerfile best practices
 
 #TODO: still issues accessing dashboard
+#apt-get sqlite3
 #use .dockerignore
 #options to activate only certain services
 #path to config.js, path to sqlite file
@@ -25,8 +26,9 @@ RUN npm install sqlite-timeseries-dashboard/
 
 # local files to include in the image
 ADD config.js /statsd/config.js
-ADD test.sqlite /test.sqlite
 ADD start-services /start-services
+# empty sqlite database
+RUN touch test.sqlite
 
 # ports available from other containers
 #   use publish to make available from anywhere

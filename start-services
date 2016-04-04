@@ -4,7 +4,7 @@
 /usr/local/bin/node /sqlite-timeseries-dashboard/server.js &
 
 # run statsd
-/usr/local/bin/node /statsd/stats.js /statsd/config.js #&
+/usr/local/bin/node /statsd/stats.js /statsd/config.js
 
 # run metric source
 # ...
