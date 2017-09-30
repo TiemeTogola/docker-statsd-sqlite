@@ -14,12 +14,12 @@ FROM node
 RUN git clone https://github.com/etsy/statsd.git
 
 # install statsd-sqlite-backend
-RUN git clone https://github.com/TiemeTogola/statsd-sqlite-backend.git
+RUN git clone https://github.com/ttogola/statsd-sqlite-backend.git
 RUN mkdir -p /stastd/node_modules \
     && npm install --prefix /statsd statsd-sqlite-backend/
 
 # install sqlite-timeseries-dashboard
-RUN git clone https://github.com/TiemeTogola/sqlite-timeseries-dashboard.git
+RUN git clone https://github.com/ttogola/sqlite-timeseries-dashboard.git
 RUN npm install sqlite-timeseries-dashboard/
 
 #RUN pip install metric source
